@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Redressed', cursive;
+  font-weight: lighter;
+}
+
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 2.5rem;
+  color: #0b2b19;
+}
+
+p {
+  font-size: 2.2rem;
+  color: #0b2b19;
+}
+
+.hero {
+  background: url("../image/img2.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero h1 {
+  padding-top: 5em;
+  color: #f0e5e5;
+  font-size: 3.3rem;
+  font-family: 'Playball', cursive;
+  -webkit-animation: moveup .4s linear 1;
+          animation: moveup .4s linear 1;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  visibility: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hero p {
+  padding-top: 0.3em;
+  font-size: 3rem;
+  color: #f0e5e5;
+  -webkit-animation: moveup .6s linear 1;
+          animation: moveup .6s linear 1;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  visibility: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveup {
+  0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes moveup {
+  0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.nat {
+  width: 100%;
+  height: 100vh;
+}
+
+.nat h1 {
+  padding-top: 2em;
+  margin-left: 0.2em;
+}
+
+.nat p {
+  margin: 1em auto;
+  line-height: 3rem;
+  background: url("../image/img1.png");
+  width: 80%;
+}
+
+.nat h2 {
+  visibility: hidden;
+}
+
+.joe {
+  width: 100%;
+  height: 100vh;
+}
+
+.joe h1 {
+  padding-top: 2em;
+  margin-left: 0.2em;
+}
+
+.joe p {
+  margin: 1em auto;
+  line-height: 3rem;
+  background: url("../image/img1.png");
+  width: 80%;
+}
+
+.joe h3 {
+  visibility: hidden;
+}
+
+.pal {
+  width: 100%;
+  height: 100vh;
+}
+
+.pal h1 {
+  margin-left: 0.2em;
+  padding-top: 2em;
+}
+
+.pal .front {
+  background: url("../image/img1.png");
+  width: 50%;
+  margin: 1em 2.5em;
+}
+
+.pal .front h1 {
+  font-family: 'Playball', cursive;
+  padding-top: 0;
+}
+
+.pal .front p {
+  margin-top: 0.5em;
+  line-height: 3rem;
+}
+
+.pal .back {
+  background: url("../image/img1.png");
+  width: 50%;
+  margin: 1.5em 2.5em;
+}
+
+.pal .back h1 {
+  font-family: 'Playball', cursive;
+  padding-top: 0;
+}
+
+.pal .back p {
+  margin-top: 0.5em;
+  line-height: 3rem;
+}
+
+.mal {
+  background: url("../image/img2.png");
+  width: 100%;
+  height: 90vh;
+}
+
+.mal .twitter {
+  fill: white;
+  stroke: white;
+  width: 5em;
+  padding-top: 10em;
+}
+
+.mal .github {
+  fill: white;
+  stroke: white;
+  width: 5em;
+}
+
+.mal .in {
+  fill: white;
+  stroke: white;
+  width: 5em;
+  padding-top: 5em;
+}
+
+.mal .mail {
+  width: 5em;
+}
+
+.mal .mail path {
+  fill: white;
+  stroke: white;
+}
+
+.social {
+  text-decoration: none;
+  margin: 3.5em;
+}
+
+@media only screen and (min-width: 1010px) {
+  .hero {
+    background: url("../image/img2.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+  .hero h1 {
+    padding-top: 3.5em;
+    color: #f0e5e5;
+    font-size: 3.3rem;
+    font-family: 'Playball', cursive;
+  }
+  .hero p {
+    padding-top: 0.3em;
+    font-size: 3rem;
+    color: #f0e5e5;
+  }
+  .nat {
+    overflow: hidden;
+  }
+  .nat h1 {
+    padding-top: .5em;
+    visibility: hidden;
+  }
+  .nat h2 {
+    color: #868585;
+    margin-top: -.1em;
+    opacity: 15%;
+    font-family: 'Lato', sans-serif;
+    font-size: 10rem;
+    visibility: visible;
+    text-align: right;
+  }
+  .joe {
+    overflow: hidden;
+  }
+  .joe h1 {
+    padding-top: .1em;
+    visibility: hidden;
+  }
+  .joe h3 {
+    color: #868585;
+    margin-top: -.1em;
+    opacity: 15%;
+    font-family: 'Lato', sans-serif;
+    font-size: 9rem;
+    visibility: visible;
+    text-align: left;
+  }
+  .pal {
+    width: 100%;
+    height: 100vh;
+  }
+  .pal h1 {
+    margin-left: 0.2em;
+    padding-top: 1em;
+  }
+  .mal {
+    background: url("../image/img2.png");
+    width: 100%;
+    height: 90vh;
+  }
+  .mal .twitter {
+    fill: white;
+    stroke: white;
+    width: 5em;
+    padding-top: 8em;
+    padding-left: 9em;
+  }
+  .mal .github {
+    fill: white;
+    stroke: white;
+    width: 5em;
+  }
+  .mal .in {
+    fill: white;
+    stroke: white;
+    width: 5em;
+    padding-top: 5em;
+    padding-left: 9em;
+  }
+  .mal .mail {
+    width: 5em;
+  }
+  .mal .mail path {
+    fill: white;
+    stroke: white;
+  }
+  .social {
+    text-decoration: none;
+    margin: 0 8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background: url("../image/img2.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+  .hero h1 {
+    padding-top: 4em;
+    color: #f0e5e5;
+    font-size: 4rem;
+    font-family: 'Playball', cursive;
+  }
+  .hero p {
+    padding-top: 0.3em;
+    font-size: 4rem;
+    color: #f0e5e5;
+  }
+  .nat h1 {
+    padding-top: 2em;
+    visibility: hidden;
+  }
+  .nat h2 {
+    color: #868585;
+    opacity: 18%;
+    font-family: 'Lato', sans-serif;
+    font-size: 10rem;
+    visibility: visible;
+    text-align: right;
+  }
+  .joe h1 {
+    padding-top: 2em;
+    visibility: hidden;
+  }
+  .joe h3 {
+    color: #868585;
+    opacity: 18%;
+    font-family: 'Lato', sans-serif;
+    font-size: 10rem;
+    visibility: visible;
+    text-align: left;
+  }
+  .pal {
+    width: 100%;
+    height: 100vh;
+  }
+  .pal h1 {
+    margin-left: 0.2em;
+    padding-top: 2em;
+  }
+  .mal {
+    background: url("../image/img2.png");
+    width: 100%;
+    height: 90vh;
+  }
+  .mal .twitter {
+    fill: white;
+    stroke: white;
+    width: 5em;
+    padding-top: 8em;
+    padding-left: 9em;
+  }
+  .mal .github {
+    fill: white;
+    stroke: white;
+    width: 5em;
+  }
+  .mal .in {
+    fill: white;
+    stroke: white;
+    width: 5em;
+    padding-top: 5em;
+    padding-left: 9em;
+  }
+  .mal .mail {
+    width: 5em;
+  }
+  .mal .mail path {
+    fill: white;
+    stroke: white;
+  }
+  .social {
+    text-decoration: none;
+    margin: 0 12em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

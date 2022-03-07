@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Redressed', cursive;
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 2.5rem;
+    color: rgb(11, 43, 25);
+}
+
+p {
+    font-size: 2.2rem;
+    color: rgb(11, 43, 25);
+}
+
+.hero {
+    background: url('../image/img2.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    h1 {
+        padding-top: 5em;
+        color: rgb(240, 229, 229);
+        font-size: 3.3rem;
+        font-family: 'Playball', cursive;
+        animation: moveup .4s linear 1;
+        animation-delay: .5s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    p {
+        padding-top: 0.3em;
+        font-size: 3rem;
+        color: rgb(240, 229, 229);
+        animation: moveup .6s linear 1;
+        animation-delay: 1.2s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(40px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.nat {
+    width: 100%;
+    height: 100vh;
+    h1 {
+        padding-top: 2em;
+        margin-left: 0.2em;
+    }
+    p {
+        margin: 1em auto;
+        line-height: 3rem;
+        background: url('../image/img1.png');
+        width: 80%;
+    }
+    h2{
+        visibility: hidden;
+    }
+}
+
+.joe {
+    width: 100%;
+    height: 100vh;
+    h1 {
+        padding-top: 2em;
+        margin-left: 0.2em;
+    }
+    p {
+        margin: 1em auto;
+        line-height: 3rem;
+        background: url('../image/img1.png');
+        width: 80%;
+    }
+    h3{
+        visibility: hidden;
+    }
+}
+
+.pal {
+    width: 100%;
+    height: 100vh;
+    h1 {
+        margin-left: 0.2em;
+        padding-top: 2em;
+    }
+    .front {
+        background: url('../image/img1.png');
+        width: 50%;
+        margin: 1em 2.5em;
+        h1 {
+            font-family: 'Playball', cursive;
+            padding-top: 0;
+        }
+        p {
+            margin-top: 0.5em;
+            line-height: 3rem;
+        }
+    }
+    .back {
+        background: url('../image/img1.png');
+        width: 50%;
+        margin: 1.5em 2.5em;
+        h1 {
+            font-family: 'Playball', cursive;
+            padding-top: 0;
+        }
+        p {
+            margin-top: 0.5em;
+            line-height: 3rem;
+        }
+    }
+}
+
+.mal {
+    background: url('../image/img2.png');
+    width: 100%;
+    height: 90vh;
+    
+    .twitter {
+        fill: white;
+        stroke: white;
+        width: 5em;
+        padding-top: 10em;
+    }
+    .github {
+        fill: white;
+        stroke: white;
+        width: 5em;
+    }
+    .in {
+        fill: white;
+        stroke: white;
+        width: 5em;
+        padding-top: 5em;
+    }
+    .mail {
+        width: 5em;
+        path {
+            fill: white;
+            stroke: white;
+        }
+    }
+}
+.social {
+    text-decoration: none;
+    margin: 3.5em;
+}
+
+
+
+
+
+@media only screen and (min-width: 1010px) {
+    .hero {
+        background: url('../image/img2.png');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        h1 {
+            padding-top: 3.5em;
+            color: rgb(240, 229, 229);
+            font-size: 3.3rem;
+            font-family: 'Playball', cursive;
+        }
+        p {
+            padding-top: 0.3em;
+            font-size: 3rem;
+            color: rgb(240, 229, 229);
+        }
+    }
+    .nat{
+        overflow: hidden;
+        h1{
+            padding-top: .5em;
+            visibility: hidden;
+        }
+        h2{
+            color: rgb(134, 133, 133);
+            margin-top: -.1em;
+            opacity: 15%;
+            font-family: 'Lato', sans-serif;
+            font-size: 10rem;
+            visibility: visible;
+            text-align: right;
+        }
+    }
+    .joe{
+        overflow: hidden;
+        h1{
+            padding-top: .1em;
+            visibility: hidden;
+        }
+        h3{
+            color: rgb(134, 133, 133);
+            margin-top: -.1em;
+            opacity: 15%;
+            font-family: 'Lato', sans-serif;
+            font-size: 9rem;
+            visibility: visible;
+            text-align: left;
+        }
+    }
+
+
+    .pal {
+        width: 100%;
+        height: 100vh;
+        h1 {
+            margin-left: 0.2em;
+            padding-top: 1em;
+        }
+    }
+    .mal {
+        background: url('../image/img2.png');
+        width: 100%;
+        height: 90vh;
+        
+        .twitter {
+            fill: white;
+            stroke: white;
+            width: 5em;
+            padding-top: 8em;
+            padding-left: 9em;
+        }
+        .github {
+            fill: white;
+            stroke: white;
+            width: 5em;
+        }
+        .in {
+            fill: white;
+            stroke: white;
+            width: 5em;
+            padding-top: 5em;
+            padding-left: 9em;
+        }
+        .mail {
+            width: 5em;
+            path {
+                fill: white;
+                stroke: white;
+            }
+        }
+    }
+    .social {
+        text-decoration: none;
+        margin: 0 8em;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        background: url('../image/img2.png');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        h1 {
+            padding-top: 4em;
+            color: rgb(240, 229, 229);
+            font-size: 4rem;
+            font-family: 'Playball', cursive;
+        }
+        p {
+            padding-top: 0.3em;
+            font-size: 4rem;
+            color: rgb(240, 229, 229);
+        }
+    }
+    .nat{
+        h1{
+            padding-top: 2em;
+            visibility: hidden;
+        }
+        h2{
+            color: rgb(134, 133, 133);
+            opacity: 18%;
+            font-family: 'Lato', sans-serif;
+            font-size: 10rem;
+            visibility: visible;
+            text-align: right;
+        }
+    }
+    .joe{
+        h1{
+            padding-top: 2em;
+            visibility: hidden;
+        }
+        h3{
+            color: rgb(134, 133, 133);
+            opacity: 18%;
+            font-family: 'Lato', sans-serif;
+            font-size: 10rem;
+            visibility: visible;
+            text-align: left;
+        }
+    }
+    .pal {
+        width: 100%;
+        height: 100vh;
+        h1 {
+            margin-left: 0.2em;
+            padding-top: 2em;
+        }
+    }
+    .mal {
+        background: url('../image/img2.png');
+        width: 100%;
+        height: 90vh;
+        
+        .twitter {
+            fill: white;
+            stroke: white;
+            width: 5em;
+            padding-top: 8em;
+            padding-left: 9em;
+        }
+        .github {
+            fill: white;
+            stroke: white;
+            width: 5em;
+        }
+        .in {
+            fill: white;
+            stroke: white;
+            width: 5em;
+            padding-top: 5em;
+            padding-left: 9em;
+        }
+        .mail {
+            width: 5em;
+            path {
+                fill: white;
+                stroke: white;
+            }
+        }
+    }
+    .social {
+        text-decoration: none;
+        margin: 0 12em;
+    }
+}
